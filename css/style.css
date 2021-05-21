@@ -1,0 +1,367 @@
+body {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #010021;
+  overflow: hidden;
+}
+
+.wrapper::after {
+  content: '';
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/blure-bg.png);
+
+}
+
+.circle__wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  position: absolute;
+  display: flex;
+  width: 300vw;
+  height: 300vw;
+  background-color: #6646DA;
+  border-radius: 50%;
+  margin: 0 0 150px 0;
+}
+
+.circle2 {
+  opacity: 0.5;
+}
+
+.circle3 {
+  opacity: 0.32;
+}
+
+.text span {
+  color: #5568E0;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  opacity: 1;
+  bottom: 1%;
+  position: absolute;
+}
+
+img {
+  margin: 0 auto;
+}
+
+polygon {
+  position: absolute;
+  /* opacity: 0; */
+  width: 0;
+  height: 0;
+  color: linear-gradient(180deg, #6B3BD8 0%, #2BBDEF 100%);
+}
+
+/*  */
+
+
+.line-1,
+.line-2 {
+  position: relative;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 3s steps(24) 1s 1 normal both
+}
+
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 26em;
+  }
+}
+
+
+.image1,
+.image2,
+.image3 {
+  position: absolute;
+  /* margin-bottom: 15vw; */
+  top: 18%;
+  /* display: none; */
+
+}
+
+
+
+.image2 {
+  margin-left: 1vw;
+}
+
+.image3 {
+  margin-left: 1.5vw;
+}
+
+.hide {
+  display: none;
+}
+
+.hide2 {
+  display: none;
+  opacity: 0;
+}
+
+.show {
+  display: block;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+.size {
+  animation-name: size;
+  animation-duration: 3s;
+}
+
+@keyframes size {
+  from {
+    width: 20px;
+    opacity: 0;
+    animation-timing-function: linear;
+    top: 39%;
+  }
+
+  to {
+    width: 206px;
+    top: 20%;
+    opacity: 1;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+
+  to {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+}
+
+
+
+.traffic {
+  animation-name: traffic;
+  animation-duration: 1.5s;
+
+}
+
+@keyframes traffic {
+  from {
+    top: 18%;
+    animation-timing-function: ease-out;
+  }
+
+  to {
+    top: 25%;
+    animation-timing-function: ease-in;
+  }
+}
+
+.lab {
+  position: absolute;
+}
+
+.traffic_top {
+  animation-name: traffic_top;
+  animation-duration: 1.5s;
+}
+
+@keyframes traffic_top {
+  from {
+    margin-top: 30vw;
+    opacity: 0;
+    animation-timing-function: ease-in;
+
+  }
+
+  to {
+    margin-top: 0vw;
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
+}
+
+.endpoint {
+  top: 25%;
+}
+
+.container-data {
+  display: flex;
+  height: 70%;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.data {
+  z-index: 100;
+}
+
+.data-style {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+
+}
+
+
+
+@media (max-width: 1220px) {
+
+  .line-1,
+  .line-2 {
+    font-size: 22px;
+  }
+
+  /* .circle {
+
+    margin-bottom: 34%;
+  } */
+  .image1 {
+    top: calc(50% - 253px);
+  }
+
+  .endpoint {
+    top: calc(50% - 163px);
+  }
+
+  @keyframes traffic {
+    from {
+      top: calc(50% - 253px);
+      animation-timing-function: ease-out;
+    }
+
+    to {
+      top: calc(50% - 163px);
+      animation-timing-function: ease-in;
+    }
+  }
+
+  @keyframes size {
+    from {
+      width: 20px;
+      opacity: 0;
+      animation-timing-function: linear;
+      top: calc(50% - 73px);
+    }
+
+    to {
+      width: 206px;
+      top: calc(50% - 253px);
+      opacity: 1;
+      animation-timing-function: linear;
+    }
+  }
+}
+
+
+@media (min-width: 1220px) {
+
+  .line-1,
+  .line-2 {
+    font-size: 22px;
+  }
+
+  /* .circle {
+
+    margin-bottom: 34%;
+  } */
+  .image1 {
+    top: calc(50% - 233px);
+  }
+
+  .endpoint {
+    top: calc(50% - 163px);
+  }
+
+  @keyframes traffic {
+    from {
+      top: calc(50% - 233px);
+      animation-timing-function: ease-out;
+    }
+
+    to {
+      top: calc(50% - 163px);
+      animation-timing-function: ease-in;
+    }
+  }
+
+  @keyframes size {
+    from {
+      width: 60px;
+      opacity: 0;
+      animation-timing-function: linear;
+      top: calc(50% - 103px);
+    }
+
+    to {
+      width: 206px;
+      top: calc(50% - 233px);
+      opacity: 1;
+      animation-timing-function: linear;
+    }
+  }
+}
