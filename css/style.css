@@ -215,7 +215,7 @@ polygon {
 
 .traffic_top {
   animation-name: traffic_top;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
 @keyframes traffic_top {
@@ -229,7 +229,7 @@ polygon {
   to {
     margin-top: 0vw;
     opacity: 1;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-out;
   }
 }
 
