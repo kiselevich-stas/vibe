@@ -5,40 +5,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class='wrapper'>
-        <div class='circle__wrapper'>
-            <div class='text'>
-                <p class="line-1 show"><span>Большое</span> начинается с малого</p>
-                <p class="line-2 hide">История начинается с <span>тебя</span></p>
-            </div>
-            <div class='circle circle1'></div>
-            <div class='circle circle2'></div>
-            <div class='circle circle3'></div>
-            <div class='image1 image hide'>
-                <img class='logo' src="img/3logo.svg">
-            </div>
-            <div class='lab hide2'>
-                <img src='img/Lab.svg'>
-            </div>
-            <div class="container-data">
-                <div class="data hide">
-                    <span class='data-style'>21.09.21</span>
+    <header class='header'>
+        <div class="container">
+            <nav>
+                <ul class='header__list list__reset'>
+                    <li class="header__item"><a class='header__link' href="#contacts">Contacts</a></li>
+                    <li class="header__item"><a class='header__link' href="#summary">Summary</a></li>
+                    <li class="header__item"><a class='header__link' href="#skills">Skills</a></li>
+                    <li class="header__item"><a class='header__link' href="#code">Code</a></li>
+                    <li class="header__item"><a class='header__link' href="#education">Education</a></li>
+                    <li class="header__item"><a class='header__link' href="#expirience">Expirience</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class='main container'>
+        <section class='person'>
+            <div class="container">
+                <img src="/image/my_photo.jpg" alt="My photo" class="person__image">
+                <div class="person__info">
+                    <h1 class='person__title'>Stas Kiselevich</h1>
+                    <p class="person__descr">FUTURE JUNIOR FRONT-END DEVELOPER</p>
                 </div>
             </div>
+        </section>
+        <section class='contacts' id="contacts">
+            <div class="container">
+                <h2 class="contacts__title">Contacts</h2>
+                <ul class="contacts__list list__reset">
+                    <li class='contacts__item'>
+                        <address>adress: Torzhkovskaya st. Saint-Peterburg, Russia</address>
+                    </li>
+                    <li class='contacts__item'><a href="tel:+79117388949">phone: 89117388949</a></li>
+                    <li class='contacts__item'><a href="https://github.com/kiselevich-stas">GitHub: kiselevich-stas</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class='summary' id="summary">
+            <div class="container">
+                <h2 class="summary__title">Summary</h2>
+                <p class='summary__descr'>Marital status: Single, no children. I am able to quickly perceive information
+                    and strive to learn the subject of study in all details, I also know how to work in a team, I try to
+                    find high-quality solutions to complex problems. Resistant to stress, responsible, sociable and
+                    positive.</p>
+            </div>
+        </section>
+        <section class='skills' id="skills">
+            <div class="container">
+                <h2 class="skills__title">Skills</h2>
+                <ul class="skills__list">
+                    <li class='skills__item'>HTML,CSS</li>
+                    <li class='skills__item'>JS, SQL</li>
+                    <li class='skills__item'>Version control: Git</li>
+                    <li class='skills__item'>Figma</li>
+                    <li class='skills__item'>Development environment: WEbStorm, VS code</li>
+                </ul>
+            </div>
+        </section>
+        <section class='code' id="code">
+            <div class="container">
+                <h2 class="code__title">code</h2>
+                <pre class='code__pre'>
+                <code>
+function squareDigits(num){
+    let result = Array.from(num.toString(), elem => elem 
+    * elem);
+    return +result.join('');
+}
+                </code>
+            </pre>
+            </div>
+        </section>
+        <section class='education' id="education">
+            <div class="container">
+                <h2 class="education__title">Education</h2>
+                <p class='education__descr'>Saint Petersburg Electrotechnical University 'LETI': Bachelor in Management
+                    in Technical Systems <span>(graduated)</span></p>
+                <p class='education__descr'>Saint Petersburg Electrotechnical University 'LETI': Master in IT Project
+                    Management <span>(student)</span></p>
+            </div>
+        </section>
+        <section class='expirience' id="expirience">
+            <div class="container">
+                <h2 class='expirience__title'>expirience</h2>
+                <ul class="expirience__list">
+                    <li class="expirience__item">Jan-2021 - June 2021 I was developing websites using WordPress tools.
+                    </li>
+                    <li class="expirience__item">I really want to get the necessary skills and knowledge to work in a
+                        large IT company.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class='footer'>
+        <div class="container">
+            <div class="footer__left">
+                <span class='footer__copyright'>© 2022</span>
+                <a class='footer__link' href="https://github.com/kiselevich-stas">kiselevich-stas</a>
+            </div>
+            <a href="https://rs.school/js/" class="footer__link">
+                <img class='footer__logo' src="/image/rs_school_js.svg" alt="Logo">
+            </a>
         </div>
-    </div>
-    <footer>
-        <img src="img/Group.svg" class='foot'>
     </footer>
 </body>
-<script src="js/anime.min.js"></script>
-<script src="js/anime.js"></script>
 
 </html>
